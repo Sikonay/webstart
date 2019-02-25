@@ -78,7 +78,7 @@ img {
 
 .navbar__button {
   margin-left: 30px;
-  margin-left-width: 170px;
+  width: 170px;
   height: 49px;
   font-size: 13px;
   font-weight: 400;
