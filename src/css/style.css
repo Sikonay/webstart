@@ -19,8 +19,15 @@ img {
 
 @media (max-width: 768px) {
   .container {
-    max-width: 580px;
+    max-width: 566px;
     width: 95%;
+  }
+}
+
+@media (max-width: 567px) {
+  .container {
+    max-width: 420px;
+    width: 100%;
   }
 }
 
