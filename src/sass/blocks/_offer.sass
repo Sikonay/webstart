@@ -1,0 +1,105 @@
+.offer
+  background: url('../img/offer/offer-image.png') no-repeat
+  background-position: center right
+  box-sizing: contain
+  position: relative
+  &:before
+    content: ''
+    width: 50%
+    height: 100%
+    position: absolute
+    top: 0
+    left: 0
+    background-color: #fff
+  &-block
+    width: 50%
+    padding-right: 90px
+    position: relative
+  &__title
+    margin-top: 0
+    margin-bottom: 24px
+    display: inline-block
+    width: 70%
+  &__subtitle
+    display: inline-block
+    margin-bottom: 30px
+    width: 50%
+  &__input
+    padding: 25px
+    color: #999999
+    border-radius: 10px
+    border: 1px solid #dddddd
+    width: 240px
+    &:first-child
+      margin-right: 10px
+  &__button
+    margin-top: 30px
+    width: 100%
+    min-height: 70px
+  &-information
+    display: flex
+    justify-content: space-between
+    margin-top: 30px
+    font-size: 15px
+  &__callme
+    display: inline-block
+    width: 65%
+  &__callyourself
+    width: 45%
+  &__phone
+    text-decoration: none
+    display: inline-block
+    color: $text-color
+    +bold
+@media (max-width: 1200px)
+  .offer
+    &:before
+      content: ''
+      width: 55%
+    &-block
+      padding-right: 0
+      text-align: center
+      
+      
+    &__title
+      width: 100%
+    &__subtitle
+      width: 100%
+    &__input
+      width: 100%
+      &:first-child
+        margin-right: 0
+        margin-bottom: 15px
+    &-information
+      flex-direction: column
+    &__callme
+      width: 100%
+    &__callyourself
+      width: 100%
+
+@media (max-width: 768px)
+  .offer
+    padding: 55px 0
+    &-block
+      width: 100%
+      text-align: left
+      line-height: 1.1
+    &:before
+      width: 100%
+    &__title
+      font-size: 20px
+      line-height: 1.1
+    &-information
+      line-height: 1.7
+@media (max-width: 320px)
+  .offer
+    padding: 50px 0
+    &__title
+      font-size: 18px
+      margin-bottom: 15px
+      line-height: 1.4
+    &__input
+      &:first-child
+        margin-bottom: 12px
+    &__button
+      margin-top: 12px
